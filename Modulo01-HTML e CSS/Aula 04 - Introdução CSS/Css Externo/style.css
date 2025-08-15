@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /*Define o tipo de fonte*/
+}
+
+h1{
+    font-size: 50px;
+    color:blue ;
+    font-weight: 400;
+}
+
+body {
+    background-color:lightblue ;
+}
+
+
+header {
+    background-color: greenyellow; /*Troca a cor de fundo*/
+    font-size: 20px;
+}
+
+main {
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    font-weight: bolder; /*Controla a espessura da fonte*/
+    font-size: 1,5em; /*Responsável por definir o tamanho do texto (px). Ao utilizar a (Em), irá realizar a metade da px*/
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-indent:50px ;
+    color: #ffff;
+}
+
+main > section > div > p {
+        color: red;
+}
+
+a {
+    text-decoration: none; /*Retira o sublinhado do link*/
+    font-style: italic; /*Deixa em Itálico*/
+}
