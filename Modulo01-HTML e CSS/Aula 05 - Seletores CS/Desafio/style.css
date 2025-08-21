@@ -1,0 +1,45 @@
+body {
+    width: 50vw;
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 1em;
+    color: #34495E;
+    line-height: 1.4;
+}
+
+#titulo1 {
+    color: #2C3E50;
+    background-color: #ECF0F1;
+}
+
+#subtitulo1 {
+    color: #E64E61;
+    background-color: #F9EBEA;
+}
+
+#titulo2 {
+    background-color: #E9F7EF;
+    color: #30AE60;
+}
+
+#titulo3 {
+    color: #F39C11;
+    background-color: #FFF3E6;
+}
+
+#titulo4 {
+    color: #8E44AD;
+    background-color: #F5E6F5;
+}
