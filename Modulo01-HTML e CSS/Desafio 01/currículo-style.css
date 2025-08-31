@@ -1,0 +1,11 @@
+@import url(style.css);
+main > h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+}
