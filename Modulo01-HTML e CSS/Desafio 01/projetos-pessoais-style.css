@@ -50,3 +50,8 @@ body {
     background-color: blue;
     margin-bottom: 15px;
 }
+
+.projetos a:hover {
+    transform: scale(1.10);
+    background-color: coral;
+}

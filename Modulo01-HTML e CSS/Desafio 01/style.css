@@ -4,9 +4,9 @@
 }
 
 header {
-    text-align: center;
+    text-align: left;
     margin-top: auto;
-     background-image: linear-gradient(to bottom, blue, rgba(0, 0, 255, 0.336));
+    background-image: linear-gradient(to bottom, blue, rgba(0, 0, 255, 0.336));
     padding: 10px 5px 30px 10px;
     margin-bottom: auto;
 }
@@ -16,6 +16,7 @@ header > h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     margin: 16px;
+    text-shadow: #333 2px 3px 2px;
 }
 
 nav > a{
@@ -31,10 +32,11 @@ nav > a{
 
 nav a:hover {
     transform: scale(1.10);
+    background-color: cornflowerblue;
 }
 
 body {
-    background-color: lightcyan;
+    background-color: rgba(18, 216, 223, 0.37);
 }
 
 main > div > h2 {
@@ -44,11 +46,12 @@ main > div > h2 {
 
 main > div > p {
     margin-bottom: 15px;
+    margin-right: 12px;
 }
 
 p {
     text-align: justify;
-    font-size: 19px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
