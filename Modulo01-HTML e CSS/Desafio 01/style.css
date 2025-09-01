@@ -38,6 +38,7 @@ nav a:hover {
 
 body {
     background-color: rgba(18, 216, 223, 0.37);
+    margin-left: 5px;
 }
 
 main > div > h2 {
