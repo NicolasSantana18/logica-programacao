@@ -28,6 +28,7 @@ nav > a{
     margin-left: 15px;
     padding: 5px;
     display: inline-block;
+    text-align: justify;
 }
 
 nav a:hover {
