@@ -6,7 +6,7 @@
 header {
     text-align: left;
     margin-top: auto;
-    background-image: linear-gradient(to bottom, blue, rgba(0, 0, 255, 0.336));
+    background-image: linear-gradient(to bottom, aqua, blue);
     padding: 10px 5px 30px 10px;
     margin-bottom: auto;
 }
@@ -22,7 +22,7 @@ header > h1 {
 nav > a{
     text-decoration: none;
     border: 5px solid rgb(0, 255, 98);
-    color: aqua;
+    color: rgba(0, 255, 255, 0.959);
     border-radius: 20px;
     font-size: 17px;
     margin-left: 15px;
