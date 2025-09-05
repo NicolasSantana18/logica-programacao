@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url(https://www.deco.proteste.pt/-/media/edideco/images/home/tecnologia/tablets%20e%20computadores/tips/formatar%20computador/formatar-computador.jpg?rev=a0c82412-41f3-4c3b-8285-05520ed3dce1&mw=660&hash=3E4E6B6C469289B72C2814AB14E15B17);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    background-color: white;
+    width: 40vw;
+    margin: 50px auto;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: blue;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+button {
+    background-color: #007fbb;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 30%;
+    cursor: pointer;
+}
+button[type="reset"] {
+    background-color: red;
+}
