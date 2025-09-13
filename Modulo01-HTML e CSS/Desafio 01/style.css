@@ -107,6 +107,20 @@ footer{
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px){
+    .foto {
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 4, 255);
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 162, 255);
+    }
+}
+
+
+
+
 @media (min-width: 1025px) and (max-width: 1440px) {
     .foto {
     width: 180px;
