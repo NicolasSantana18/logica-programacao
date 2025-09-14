@@ -100,10 +100,12 @@ footer{
     color: rgba(0, 255, 255, 0.959);
     border-radius: 20px;
     font-size: 17px;
-    margin-left: 3px;
+    margin-left: 9px;
     padding: 5px;
     display: inline-block;
     text-align: justify;
+    flex-direction: row;
+    flex-wrap: nowrap;
     }
 }
 
@@ -130,6 +132,7 @@ footer{
     display: inline-block;
     text-align: justify;
     flex-direction: row;
+    flex-wrap: nowrap;
     }
 }
 
@@ -167,6 +170,8 @@ footer{
     padding: 5px;
     display: inline-block;
     text-align: justify;
+    flex-direction: row;
+    flex-wrap: nowrap;
     }
 }
 
