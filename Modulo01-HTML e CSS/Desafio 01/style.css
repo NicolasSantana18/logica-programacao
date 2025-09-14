@@ -111,8 +111,8 @@ footer{
 
 @media (min-width: 481px) and (max-width: 768px) {
     .foto {
-    width: 100px;
-    height:100px;
+    width: 120px;
+    height:120px;
     border-radius: 50%;
     border: 3px solid rgb(0, 4, 255);
     margin-top: 10px;
@@ -125,10 +125,11 @@ footer{
     color: rgba(0, 255, 255, 0.959);
     border-radius: 20px;
     font-size: 17px;
-    margin-left: 3px;
+    margin-left: 10px;
     padding: 5px;
     display: inline-block;
     text-align: justify;
+    flex-direction: row;
     }
 }
 
