@@ -25,6 +25,10 @@ label {
     margin-top: 80px;
 }
 
+label, input {
+    text-align: justify;
+}
+
 #pedido {
     height: 80px;
     width: 50%;
