@@ -45,12 +45,33 @@ main {
     margin-left: 9px;
 }
 
+
+.título {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    vertical-align: middle;
+}
+
+
 .foto{
     width: 180px;
     height:180px;
     border-radius: 50%;
     border: 3px solid rgb(0, 4, 255);
     margin-top: 10px;
+}
+
+.nome {
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: blue;
 }
 
 
