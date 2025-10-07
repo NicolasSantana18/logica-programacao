@@ -66,6 +66,38 @@ button:hover {
     color: white;
 }
 
+@media (max-width: 480px){
+  .cadastro {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 70%;
+}
+    input {
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    max-width: 30vw;
+}
+    button {
+    background-color: aqua;
+    border-radius: 15px;
+    width: 44%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 10px 5px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+}
 
 @media (min-width: 481px) and (max-width: 768px){
   .cadastro {
