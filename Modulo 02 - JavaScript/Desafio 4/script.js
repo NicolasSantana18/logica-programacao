@@ -1,16 +1,16 @@
 const alunos = []
 
-function cadastro(nome, n1){
+function cadastro(){
 
     let nome = (document.getElementById("nome").value)
     let n1 = parseInt(document.getElementById("nota").value)
 
-    if (n1 >= 7) {
-        alunos.push(`nome: ${nome} - nota: ${n1} - APROVADO`)
-    }
-    else {
-        alunos.push(`nome: ${nome} - nota: ${n1} - REPROVADO`)
-    }
+    let aluno = {
+        nome: nome,
+        nota: n1
+    };
 
-    document.getElementById("lista").innerHTML = alunos.join("<br>")
+    alunos.push(aluno)
+
+    document.getElementById("lista").innerHTML = alunos
 }
