@@ -14,14 +14,22 @@ function cadastro(){
 
     
     exibirValores(alunos)
+
 }
 
 function exibirValores(alunos){
     const listaAlunos = document.getElementById("listaAlunos")
     listaAlunos.innerHTML = ""
     alunos.forEach(aluno => {
-        listaAlunos.innerHTML += aluno.nome + "-" + aluno.nota + "<br>"
-        
+        listaAlunos.innerHTML += "<br>" + "<strong>Nome:</strong> " + aluno.nome + " - " + "<strong>Nota:</strong> " + aluno.nota + "<br>"
     });
 
+}
+
+function esconder(){
+    let nome = document.getElementById("nome").value = "";
+    let nota = parseInt(document.getElementById("nota").value = "");
+
+    nome.value = ""
+    nota.value = ""
 }

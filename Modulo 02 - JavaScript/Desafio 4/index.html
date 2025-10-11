@@ -11,21 +11,20 @@
         <h1>Tela de Cadastro</h1>
             <div>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" name="nome" required>
                 <br>
                 <label for="nota">Nota:</label>
-                <input type="number" id="nota" required>
+                <input type="number" id="nota" name="nota" required>
             </div>
             <div>
-                <input type="submit" value="Enviar" onclick="cadastro()">
-                <input type="reset" value="Deletar">
+                <input class="button" type="submit" value="Enviar" onclick="cadastro()">
+                <input class="button" type="reset" value="Deletar">
             </div>
     </div>
     <div >
         <h2>Lista dos Alunos Cadastrados</h2>
-        <p id="lista">Sua lista será exibida aqui</p>
         <div id="listaAlunos">
-
+            <p>Sua lista será exibida aqui</p>
         </div>
     </div>
 

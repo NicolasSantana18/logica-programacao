@@ -48,8 +48,9 @@ input {
     color: white;
 }
 
-button {
-    background-color: aqua;
+.button {
+    background-color: rgba(0, 255, 255, 0.836);
+    color: darkblue;
     border-radius: 15px;
     width: 40%;
     height: 40%;
@@ -59,7 +60,7 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+.button:hover {
     opacity: 0.8;
     transform: scale(1.05);
     background-color: blue;
@@ -86,7 +87,7 @@ button:hover {
     color: white;
     max-width: 30vw;
 }
-    button {
+    .button {
     background-color: aqua;
     border-radius: 15px;
     width: 44%;
@@ -119,7 +120,7 @@ button:hover {
     color: white;
     max-width: 30vw;
 }
-    button {
+    .button {
     background-color: aqua;
     border-radius: 15px;
     width: 44%;
