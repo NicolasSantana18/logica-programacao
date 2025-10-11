@@ -14,12 +14,21 @@ body {
     background-color: black;
 }
 
+#form {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30vw;
+    width: 40%;
+}
+
 
 .formulario {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1px;
-    max-width: 300px;
+    
 }
 
 
@@ -27,38 +36,86 @@ body {
     padding: 8px;
     font-size: 1rem;
     border-radius: 4px;
+    text-align: justify;
+    width: 300px;
 }
 
 .formulario, label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: white;
+    color: black;
+    
 }
 
 
 .botao > button {
+    text-align: center;
     border: 2px solid blue;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 15px;
     padding: 5px 5px 5px 5px;
     background-color: blue;
     color: white;
     display: inline-block;
-    font-size: 19px;
+    font-size: 17px;
+    width: 100px;
 }
 
 
 .botao > button:hover {
     transform: scale(1.10);
     background-color: aqua;
+    color: black;
+    font-weight: bold;
 }
 
 
 #pedido {
     max-width: 500px;
     height: 80px;
-    width: 250px;
+    width: 300px;
     vertical-align: top;
 }
 
 
+@media (max-width: 480px) {
+    #form {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30vw;
+    width: 40%;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #form {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30vw;
+    width: 40%;   
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #form {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30vw;
+    width: 40%;   
+}
+}
