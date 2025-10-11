@@ -92,6 +92,21 @@ body {
     width: 100%;
 }
 
+    .formulario, input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: justify;
+    width: 100px;
+}
+
+    .formulario, label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    
+}
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -104,6 +119,21 @@ body {
     text-align: center;
     max-width: 100vw;
     width: 80%;   
+}
+
+    .formulario, input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: justify;
+    width: 200px;
+}
+
+    .formulario, label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    
 }
 }
 
