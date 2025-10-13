@@ -28,22 +28,20 @@ function exibirValores(alunos){
     const listaAlunos = document.getElementById("listaAlunos")
     listaAlunos.innerHTML = ""
     alunos.forEach(aluno => {
-        listaAlunos.innerHTML += "<br>" + "<strong>Nome:</strong> " + aluno.nome + " - " + "<strong>Nota:</strong> " + aluno.nota + "<br>"
+        const p = document.createElement("p");
+
+        p.innerHTML += "<br>" + "<strong>Nome:</strong> " + aluno.nome + " - " + "<strong>Nota:</strong> " + aluno.nota + "<br>"
 
         if (aluno.nota >= 7){
-            listaAlunos.style.backgroundColor = "green"
+            p.style.backgroundColor = "green"
+            p.style.color = "white"
     }
         else if (aluno.nota < 7 ) {
-            listaAlunos.style.backgroundColor = "red"
+            p.style.backgroundColor = "red"
+            p.style.color = "white"
         }
+
+        listaAlunos.append(p);
         });
 
-}
-
-function esconder(){
-    let nome = document.getElementById("nome").value = "";
-    let nota = parseInt(document.getElementById("nota").value = "");
-
-    nome.value = ""
-    nota.value = ""
 }
