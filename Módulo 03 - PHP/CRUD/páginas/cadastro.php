@@ -48,33 +48,49 @@
 
     <?php
 
-        if($_SERVER["REQUEST_METHOD"] == "POST"){
-            include("../conexao/conexao.php");
+        try {
 
-            $nome = $_POST["nome"];
-            $sobrenome = $_POST["sobrenome"];
-            $email = $_POST["email"];
-            $curso = $_POST["curso"];
-
-
-            //Criar
-            $hoje = new DateTime();
-            $id = $hoje->format("Ym") . rand(100,999); //Rand gera um número aleatório
-
-
-            $sql = "INSERT INTO usuários(id, sobrenome, email, curso) values (?,?,?,?,?)"; //Inserindo na tabela que foi criada no MySQL
-            $stmt = $conn->prepare($sql); //preparando a consulta do sql
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                include("../conexao/conexao.php");
+    
+                $nome = $_POST["nome"];
+                $sobrenome = $_POST["sobrenome"];
+                $email = $_POST["email"];
+                $curso = $_POST["curso"];
+    
+    
+                //Criar
+                $hoje = new DateTime();
+                $id = $hoje->format("Ym") . rand(100,999); //Rand gera um número aleatório
+    
+    
+                $sql = "INSERT INTO usuários(id, nome, sobrenome, email, curso) values (?,?,?,?,?)"; //Inserindo na tabela que foi criada no MySQL
+                $stmt = $conn->prepare($sql); //preparando a consulta do sql
+                
+                $stmt->bind_param("issss", $id,$nome,$sobrenome,$email,$curso); //I de Inteiro e S de string
+                $stmt->execute();
+    
+                echo "<div class='mensagem sucesso'>Usuário cadastrado com sucesso </div>";
+    
+                $stmt->close();
+                $conn->close();
+            }
             
-            $stmt->bind_param("issss", $id,$nome,$sobrenome,$email,$curso); //I de Inteiro e S de string
-            $stmt->execute();
+        }
 
-            echo "<div class='mensagem sucesso'>Usuário cadastrado com sucesso </div>";
-
-            $stmt->close();
-            $conn->close();
+        catch(mysqli_sql_exception $e){
+            
+            if (str_contains($e->getMessage(), "Duplicate entry")) { // verifica se na variável existe a mensagem duplicate
+                echo "<div class='mensagem erro'>E-mail já está cadastrado</div>";
+            }
+            else {
+                echo "<div class='mensagem erro'>Erro ao cadastrar, Tente novamente mais tarde</div>";
+            }
 
         }
 
+
+       
 
     ?>
     
