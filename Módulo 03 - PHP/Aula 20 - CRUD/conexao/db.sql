@@ -1,0 +1,14 @@
+CREATE DATABASE faculdade;
+
+USE faculdade;
+
+CREATE TABLE usuários (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR (20) NOT NULL,
+    sobrenome VARCHAR(20) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    curso VARCHAR(5) NOT NULL,
+    nota_atividade DECIMAL(5,2) NOT NULL DEFAULT 0,
+    nota_prova DECIMAL(5,2) NOT NULL DEFAULT 0,
+    nota_final DECIMAL(5,2) NOT NULL DEFAULT 0
+);
