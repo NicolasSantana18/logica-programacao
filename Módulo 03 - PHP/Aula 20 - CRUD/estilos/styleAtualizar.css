@@ -136,6 +136,7 @@ table td {
 table {
     border-radius: 8px;
     overflow: hidden;
+    
 }
 
 .mensagem {
@@ -169,4 +170,8 @@ table {
 
 #botao-nota {
     display: block;
+}
+
+#tabela {
+    width: 100px;
 }

@@ -20,6 +20,22 @@
             <td>{$row['nota_prova']}</td>
             <td>{$row['nota_final']}</td>
         </tr>
+        <tr>
+            <td>{$row['id']}</td>
+            <td><input type='text' name='nome[{$row['id']}]' required></td>
+            <td><input type='text' name='sobrenome[{$row['id']}]' required></td>
+            <td><input type='email' name='email[{$row['id']}]' required></td>
+            <td><select name="curso" id="curso">
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="es">Engenharia de Software</option>
+                    <option value="si">Sistema de Informação</option>
+                    <option value="cc">Ciências da Computação</option>
+                </select></td>
+            <td>{$row['nota_final']}</td>
+        </tr>
 
     </tbody>
 </table>
+
+
+<input type="submit" value="Atualizar">
