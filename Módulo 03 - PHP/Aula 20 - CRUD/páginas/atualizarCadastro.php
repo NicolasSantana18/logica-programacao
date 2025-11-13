@@ -42,15 +42,14 @@
                         
 
                             if ($resultado->num_rows > 0) {
-                                echo "<table>
+                                echo "<form action='atualizacao.php' method='post' id='form-nota'>
+                                <table>
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
                                                 <th>Nome</th>
                                                 <th>Sobrenome</th>
-                                                <th>Email</th>
                                                 <th>Curso</th>
-                                                <th>Nota Final</th>
                                             </tr>
                                         </thead>";
                                 
@@ -60,31 +59,32 @@
                                         <td>{$row['id']}</td>
                                         <td>{$row['nome']}</td>
                                         <td>{$row['sobrenome']}</td>
-                                        <td>{$row['email']}</td>
                                         <td>{$row['curso']}</td>
-                                        <td>{$row['nota_final']}</td>
                                     </tr> <br>";
 
-                                     echo "<tr class='tabela'>  
-                                    <td>{$row['id']}</td>
-                                    <td><input type='text' name='nome[{$row['id']}]' required></td>
-                                    <td><input type='text' name='sobrenome[{$row['id']}]' required></td>
-                                    <td><input type='email' name='email[{$row['id']}]' required></td>
-                                    <td><select name='curs'' id='curso'>
-                                            <option value='ads'>Análise e Desenvolvimento de Sistemas</option>
-                                            <option value='es'>Engenharia de Software</option>
-                                            <option value='si'>Sistema de Informação</option>
-                                            <option value='cc'>Ciências da Computação</option>
+                                     echo "<tr class='tabela'>
+                                            <h2>Atualizar Cadastro</h2>  
+                                            <td>{$row['id']}</td>
+                                            <td><input type='text' name='nome[{$row['id']}]' required></td>
+                                            <td><input type='text' name='sobrenome[{$row['id']}]' required></td>
+                                            <td><select name='curso[{$row['id']}]'' id='curso'>
+                                                <option value='ads'>Análise e Desenvolvimento de Sistemas</option>
+                                                <option value='es'>Engenharia de Software</option>
+                                                <option value='si'>Sistema de Informação</option>
+                                                <option value='cc'>Ciências da Computação</option>
                                         </select></td>
-                                    <td>{$row['nota_final']}</td>
                                 </tr>";
                                 }
 
+                                echo "</tbody>
+                                </table>
+                                <input type='submit' value='Atualizar'>
+                                </form>";
+
+                            } else {
+                                echo "<div class='mensagem erro'>Cadastro Não Encontrado </div>";
                             }
 
-                            echo "</tbody>
-                                </table>
-                                <input type='submit' value='Atualizar'>";
                         }
 
                 }
